@@ -1,0 +1,31 @@
+  ! params.yaml
+  base:
+    project: Advertising_Project
+    random_state: 38
+    target_col: TARGET
+
+  data_source:
+    s3_source: data_given/Advertising.csv
+
+  load_data:
+    raw_dataset_csv: data/raw/Advertising.csv
+
+  split_data:
+    train_path: data/processed/train_Advertising.csv
+    test_path: data/processed/test_Advertising.csv
+    test_size: 0.3
+
+  estimators:
+    ElasticNet:
+      params:
+        # alpha: 0.88
+        # l1_ratio: 0.89
+        alpha: 0.8
+        l1_ratio: 0.3
+  model_dir: saved_models
+
+  reports:
+    params: report/params.json
+    scores: report/scores.json
+
+  webapp_model_dir: prediction_service/model/model.joblib
