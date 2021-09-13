@@ -1,4 +1,7 @@
 dvc
 dvc[gdrive]
 sklearn
+pandas
+
+yaml
 
