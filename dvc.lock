@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=params.yaml
+    deps:
+    - path: data_given/Advertising.csv
+      md5: c7a9fe5cad97b0d6a600ef2f20f48ac4
+      size: 4756
+    - path: src/get_data.py
+      md5: 6f01851fcf71b480489452641b254e9f
+      size: 670
+    - path: src/load_data.py
+      md5: 3ddab7fc912d6aeabf9996d5919d9d5e
+      size: 672
+    outs:
+    - path: data/raw/Advertising.csv
+      md5: f8d17b02846a8a45b06d4a9be29bd9bb
+      size: 4916
