@@ -10,8 +10,8 @@ stages:
       md5: 6f01851fcf71b480489452641b254e9f
       size: 670
     - path: src/load_data.py
-      md5: 4516c15b3e0c60993b278a6607dd693d
-      size: 672
+      md5: 9c5203fafac38ad5880a07469a5b82cf
+      size: 674
     outs:
     - path: data/raw/Advertising.csv
       md5: f8d17b02846a8a45b06d4a9be29bd9bb

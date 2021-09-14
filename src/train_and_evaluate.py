@@ -21,6 +21,7 @@ def eval_metrics(actual, pred):
     r2 = r2_score(actual, pred)
     return rmse, mae, r2
 
+
 def train_and_evaluate(config_path):
     config = read_params(config_path)
     test_data_path = config["split_data"]["test_path"]
@@ -67,7 +68,7 @@ def train_and_evaluate(config_path):
             "mae": mae,
             "r2": r2
         }
-        json.dump(scores, f, indent=2)
+        json.dump(scores, f, indent=4)
 
     with open(params_file, "w") as f:
         params = {
