@@ -1,6 +1,6 @@
 base:
   project: Advertising-project
-  random_state: 42
+  random_state: 38
   target_col: TARGET
 
 data_source:
@@ -19,8 +19,8 @@ estimators:
     params:
       # alpha: 0.88
       # l1_ratio: 0.89
-      alpha: 0.9
-      l1_ratio: 0.4
+      alpha: 0.6
+      l1_ratio: 0.2
 model_dir: saved_models
 
 reports:
