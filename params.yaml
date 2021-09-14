@@ -1,6 +1,6 @@
 base:
-  project: Advertising-project
-  random_state: 38
+  project: winequality-project
+  random_state: 40
   target_col: TARGET
 
 data_source:
@@ -20,7 +20,7 @@ estimators:
       # alpha: 0.88
       # l1_ratio: 0.89
       alpha: 0.6
-      l1_ratio: 0.2
+      l1_ratio: 0.4
 model_dir: saved_models
 
 reports:
