@@ -2,6 +2,8 @@ dvc
 dvc[gdrive]
 sklearn
 pandas
+pytest
+tox
+python-3.7
 
-yaml
 

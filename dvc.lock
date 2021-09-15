@@ -10,25 +10,25 @@ stages:
       md5: 6f01851fcf71b480489452641b254e9f
       size: 670
     - path: src/load_data.py
-      md5: 49e7fd627fba372d30189804df536b05
-      size: 667
+      md5: 395d1ea69d4104147700d58779a67d64
+      size: 583
     outs:
     - path: data/raw/Advertising.csv
-      md5: f8d17b02846a8a45b06d4a9be29bd9bb
+      md5: c9af4b8aae2a7c7e6cd5751c13289d52
       size: 4916
   split_data:
     cmd: python src/split_data.py --config=params.yaml
     deps:
     - path: data/raw/Advertising.csv
-      md5: f8d17b02846a8a45b06d4a9be29bd9bb
+      md5: c9af4b8aae2a7c7e6cd5751c13289d52
       size: 4916
     - path: src/split_data.py
       md5: c46f0c856c55840e53e5f3427ecee532
       size: 1065
     outs:
     - path: data/processed/test_Advertising.csv
-      md5: 0875335a3edf033db7536911dcdceb3a
-      size: 1019
+      md5: 3db2aee3aafbe132f154380b7dfc27c3
+      size: 1017
     - path: data/processed/train_Advertising.csv
-      md5: d9cacb066fe4d9aa402cd9728ee73689
-      size: 3934
+      md5: 5c93364b4293fe15cb4618f474c541cc
+      size: 3936
